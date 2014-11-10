@@ -25,7 +25,7 @@ sed -i 's/Inf/100/g' bf.hm.in
 sed  's/snp[0-9]*_gene//g' bf.hm.in | sort -nk1 > bf.rst
 hm_em -d bf.hm.in -g 3 -s 1 >/dev/null 
 ```
-Take output from hm_em "p1 p2 p3"
+Take proportion estimate from hm_em 
 
 ```shellscript
 Rscript summary.R p1 p2 p3
