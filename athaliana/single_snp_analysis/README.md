@@ -10,7 +10,7 @@ gmmea -g athaliana.bimbam.geno -p pheno.qnorm.bimbam -k kinship.matrix -lmm 1
 
 For single SNP score statistics
 ```
-gmmea -g athaliana.bimbam.geno -p pheno.qnorm.bimbam -k kinship.matrix -lmm 1
+gmmea -g athaliana.bimbam.geno -p pheno.qnorm.bimbam -k kinship.matrix -lmm 2
 ```
 
 
