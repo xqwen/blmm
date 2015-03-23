@@ -6,7 +6,7 @@ The data used for multi-SNP fine mapping analysis is taken from a 200kb genomic 
 ```
 perl extract_fm_data.pl > fm.R.dat
 ```
-The required input files for this step are "geno.csv.gz", "pheno.qnorm.bimbam" and "pheno.id", all provided in the data directory.
+The required input files for this step are "geno.csv.gz", "pheno.qnorm.bimbam" and "pheno.id". They are all provided in the data directory.
 
 The next step is to perform a linear transformation of genotype and phenotype matrices to account for the relatedness in the data. This is done by running
 ```
