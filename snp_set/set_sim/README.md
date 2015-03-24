@@ -7,20 +7,20 @@ The necessary R and perl scripts are provided in this directory. [openmp_wrapper
 
 ### Simulation Steps
 
-1. start simulation
+* start simulation
 ```shellscript
  mkdir bf_rst sim_data skat_rst
  perl sim_data.pl > simulation.cmd
 ``` 
-2. simulate phenotype
+* simulate phenotype
 ```shellscript
 openmp_wrapper -d simulation.cmd -t 10 &
 ```
-3. perform analysis
+* perform analysis
 ```shellscript
 openmp_wrapper -d analysis.cmd -t 10 &
 ```
-4. summarize results 
+* summarize results 
 ```shellscript
 cat skat_rst/* | sort -nk1 > skat.rst
 cat bf_rst/* > bf.hm.in
