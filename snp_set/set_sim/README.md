@@ -2,7 +2,7 @@
 
 ### Software utilities
 
-The necessary R and perl scripts are provided in this directory. [openmp_wrapper] (https://github.com/xqwen/openmp_wrapper) is a free software to perform parallel computing on a multi-core computer. 
+The necessary R and perl scripts are provided in this directory. [openmp_wrapper] (https://github.com/xqwen/openmp_wrapper) is a free software to perform parallel computing on a multi-core computer. [hm_em] (https://github.com/xqwen/mesh/tree/master/src/HM/) implements an EM algorithm to estimate the proportions of specified models from a mixture.
 
 
 ### Simulation Steps
