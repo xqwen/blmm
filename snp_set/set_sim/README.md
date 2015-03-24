@@ -1,22 +1,30 @@
-### start simulation
+# Simulations for SNP Set Testing
+
+### Software utilities
+
+The necessary R and perl scripts are provided in this directory. [openmp_wrapper] (https://github.com/xqwen/openmp_wrapper) is a free software to perform parallel computing on a multi-core computer. 
+
+
+### Simulation Steps
+
+1. start simulation
 
 ```shellscript
  mkdir bf_rst sim_data skat_rst
  perl sim_data.pl > simulation.cmd
 ``` 
-### simulate phenotype
+2. simulate phenotype
 
 ```shellscript
 openmp_wrapper -d simulation.cmd -t 10 &
 ```
 
-### perform analysis
+3. perform analysis
 
 ```shellscript
 openmp_wrapper -d analysis.cmd -t 10 &
 ```
-
-### summarize results 
+4. summarize results 
 
 ```shellscript
 cat skat_rst/* | sort -nk1 > skat.rst
