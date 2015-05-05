@@ -5,12 +5,12 @@
 
 The frequentist single SNP analysis is performed by using software package [GEMMA] (http://www.xzlab.org/software.html). For single SNP Wald statistics,
 ```
-gmmea -g athaliana.bimbam.geno -p pheno.qnorm.bimbam -k kinship.matrix -lmm 1
+gemma -g athaliana.bimbam.geno -p pheno.qnorm.bimbam -k kinship.matrix -lmm 1
 ```
 
 For single SNP score statistics
 ```
-gmmea -g athaliana.bimbam.geno -p pheno.qnorm.bimbam -k kinship.matrix -lmm 2
+gemma -g athaliana.bimbam.geno -p pheno.qnorm.bimbam -k kinship.matrix -lmm 2
 ```
 
 
